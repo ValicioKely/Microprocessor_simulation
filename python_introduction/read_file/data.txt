@@ -1,0 +1,1 @@
+['# test file\n', 'NOP\n', ' LDRL 5\n', 'NOP\n', 'STOP']
