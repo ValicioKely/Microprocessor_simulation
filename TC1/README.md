@@ -14,3 +14,14 @@
             elif first field = op-code3 . . .
             . . .
             else declare an error if no instruction matches.
+  ## Encoding operation 
+  ###### Example
+consider the following bin operation
+   #### 10 00000 001 010 011 0000000000000000
+        10 : Arithmetic and logic data-processing operations Group
+        00000 : operation type ADD
+        001 : register destination 
+        010 : source 1
+        011 : source 2
+        0000000000000000 :  literal
+        assembly code ADD rd, r1, r2
