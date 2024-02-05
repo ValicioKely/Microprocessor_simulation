@@ -13,3 +13,4 @@ literal = bin_code & 0xFFF  # extract 16 bits of literal
 value_dest = reg[reg_dest]
 value_1 = reg[r_s_1]
 value_2 = reg[r_s_2]
+print(bin(reg_dest))
