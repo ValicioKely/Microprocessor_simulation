@@ -1,1 +1,1 @@
-['# test file\n', 'NOP\n', ' LDRL 5\n', 'NOP\n', 'STOP']
+ ['ADD R1 R2 R3', 'BEQ LOOP', '', 'LDRL R2 4','']
