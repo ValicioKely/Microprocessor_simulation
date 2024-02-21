@@ -74,7 +74,7 @@ while go == 1:
     elif mnemonics == 'DEC':
         z = 0
         r[reg_destination] = reg_destination_value - 1
-        if z == 0:
+        if r[reg_destination] == 0:
             z = 1
     elif mnemonics == 'BRA':
         prog_count = prog_count + literal + 1
@@ -116,8 +116,8 @@ while go == 1:
         r[reg_destination] = mem[reg_pointer_value]
     elif mnemonics == 'STRI':
         mem[reg_pointer_value] = reg_destination_value
-        regs = ''.join('%02x' % b for b in r)
-        memory = ''.join('%02x' % b for b in mem)
-        print('pc =', '{:<3}'.format(old_prog_count), '{:<14}'.format(current_inst), 'Regs =', regs, 'Mem =', memory,
-              'z =', z)
-        x = input(' >>> ')
+    regs = ''.join('%02x' % b for b in r)
+    memory = ''.join('%02x' % b for b in mem)
+    print('pc =', '{:<3}'.format(old_prog_count), '{:<14}'.format(current_inst), 'Regs =', regs, 'Mem =', memory,
+          'z =', z)
+    x = input(' >>> ')
