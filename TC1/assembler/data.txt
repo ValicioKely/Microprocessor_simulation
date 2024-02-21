@@ -6,4 +6,4 @@ LDR r1 r2
 ldr r1 R2
 
 
-BEQ test @www
+BEQ test @ohatra amle if else am assembler
